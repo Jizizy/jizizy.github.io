@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 
 const whatsappUrl =
   "https://wa.me/4915901316377?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20vereinbaren.";
