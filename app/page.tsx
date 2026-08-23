@@ -222,7 +222,7 @@ export default function Home() {
           <div className="mt-12 grid gap-6 border-t border-white/20 pt-10 text-sm md:grid-cols-2">
             <div>
               <p className="text-[#cdbdad]">Adresse</p>
-              <p className="mt-2">An den Eichen 1A</p>
+              <p className="mt-2">An den Eichen 1A 59823 Arnsberg</p>
             </div>
 
             <div>
