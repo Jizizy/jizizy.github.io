@@ -1,7 +1,9 @@
+"use client";
+
 const whatsappUrl =
   "https://wa.me/4915901316377?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20vereinbaren.";
 
-export default function Home() {
+export default function Home(): import("react").JSX.Element {
   return (
     <main className="min-h-screen bg-[#f7f3ed] text-[#453d37]">
 
@@ -12,15 +14,14 @@ export default function Home() {
           {/* LOGO */}
           <a
             href="/"
-            className="flex h-16 w-16 items-center justify-center rounded-full bg-[#f7f1e9]/95 shadow-lg backdrop-blur-sm"
+            className="flex h-18 w-18 items-center justify-center rounded-full bg-[#f7f1e9]/95 shadow-lg backdrop-blur-sm"
           >
             <img
               src="/logo.png"
               alt="Olessia Wellness"
-              className="h-16 w-16 object-contain"
+              className="h-18 w-18 object-contain"
             />
           </a>
-
           {/* NAVIGATION */}
           <nav className="hidden items-center gap-8 text-sm md:flex">
             <a
@@ -136,7 +137,7 @@ export default function Home() {
 
 
       {/* ABOUT */}
-      <section id="ueber-uns" className="bg-[#eae1d7]">
+      <section id="ueber-uns" className="bg-[#4A3831]">
         <div className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
 
           <div className="grid gap-16 lg:grid-cols-[0.7fr_1.3fr]">
@@ -148,12 +149,12 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="max-w-3xl text-5xl font-light leading-tight tracking-[-0.03em] text-[#4a4039] md:text-6xl">
-                Ihre persönliche
-                <span className="font-serif italic text-[#947963]">
-                  {" "}Auszeit.
-                </span>
-              </h2>
+              <h2 className="max-w-3xl text-5xl font-light leading-tight tracking-[-0.03em] text-[#947963] md:text-6xl">
+  Ihre persönliche{" "}
+  <span className="font-serif italic">
+    Auszeit.
+  </span>
+</h2>
 
               <p className="mt-8 max-w-2xl text-lg leading-8 text-[#756960]">
                 Ich helfe Ihnen gerne dabei, Ihr Wohlbefinden zu steigern,
@@ -169,113 +170,178 @@ export default function Home() {
       </section>
 
 
-      {/* MASSAGEN */}
-      <section id="massagen" className="bg-[#f7f2eb] px-6 py-24">
-        <div className="mx-auto max-w-6xl">
+      {/* MASSAGES */}
+<section
+  id="massagen"
+  className="bg-[#F6F0EA] px-6 py-28 lg:px-10"
+>
+  <div className="mx-auto max-w-7xl">
 
-          <div className="mb-16 text-center">
-            <p className="text-sm uppercase tracking-[0.3em] text-[#96765c]">
-              Meine Behandlungen
-            </p>
+    {/* Heading */}
+    <div className="mb-14 text-center">
+      <p className="text-xs uppercase tracking-[0.35em] text-[#9A8068]">
+        Behandlungen
+      </p>
 
-            <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">
-              Meine Massagen
-            </h2>
+      <h2 className="mt-4 text-4xl font-light text-[#4A3831] md:text-5xl">
+        Meine{" "}
+        <span className="font-serif italic text-[#947963]">
+          Massagen
+        </span>
+      </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-[#74675d]">
-              Entdecken Sie unsere verschiedenen Behandlungen für
-              Entspannung, Wohlbefinden und neue Energie.
-            </p>
-          </div>
+      <p className="mx-auto mt-5 max-w-2xl text-[#74675D]">
+        Entdecken Sie meine verschiedenen Behandlungen für Körper,
+        Geist und Wohlbefinden.
+      </p>
+    </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {/* Carousel */}
+    <div className="relative">
 
-            {[
-              {
-                title: "Klassische Massage",
-                text: "Wohltuende Massage zur Entspannung und Lockerung der Muskulatur.",
-              },
-              {
-                title: "Hot-Stone Massage",
-                text: "Entspannung mit warmen Steinen für Körper und Geist.",
-              },
-              {
-                title: "Schröpfmassage",
-                text: "Traditionelle Behandlung zur Lockerung und Aktivierung des Gewebes.",
-              },
-              {
-                title: "Anticellulitemassage",
-                text: "Gezielte Massage zur Unterstützung der Haut und des Bindegewebes.",
-              },
-              {
-                title: "Kosmetische Lymphdrainage",
-                text: "Sanfte Behandlung zur Förderung des Wohlbefindens und der Entspannung.",
-              },
-              {
-                title: "Fußzonenmassage",
-                text: "Wohltuende Massage der Fußzonen für tiefe Entspannung.",
-              },
-              {
-                title: "Gesichtsmassage",
-                text: "Sanfte Massage für Gesicht, Kopf und Nacken.",
-              },
-              {
-                title: "Sportmassage",
-                text: "Kräftige Massage zur Entspannung beanspruchter Muskulatur.",
-              },
-              {
-                title: "Rückenmassage",
-                text: "Gezielte Behandlung für Rücken, Schultern und Nacken.",
-              },
-              {
-                title: "Ganzkörpermassage",
-                text: "Eine wohltuende Auszeit für den gesamten Körper.",
-              },
-              {
-                title: "Ganzkörperpeeling",
-                text: "Pflegendes Peeling für ein geschmeidiges und gepflegtes Hautgefühl.",
-              },
-            ].map((item) => (
-              <article
-                key={item.title}
-                className="group rounded-[28px] border border-[#ded3c7] bg-[#faf7f2] p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-              >
+      <div
+        className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-6"
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+        }}
+      >
 
-                <div className="mb-7 flex h-14 w-14 items-center justify-center rounded-full bg-[#e4d7c9] text-[#80654e] transition group-hover:bg-[#6f5845] group-hover:text-white">
-                  ✦
-                </div>
-
-                <h3 className="text-2xl font-light text-[#3d342d]">
-                  {item.title}
-                </h3>
-
-                <p className="mt-4 leading-7 text-[#74675d]">
-                  {item.text}
-                </p>
-
-              </article>
-            ))}
-
+        {/* 01 — Klassische Massage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/klassische-massage.jpg"
+              alt="Klassische Massage"
+              className="block h-auto w-full"
+            />
           </div>
         </div>
-      </section>
 
+        {/* 02 — Hot-Stone Massage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/hot-stone-massage.jpg"
+              alt="Hot-Stone Massage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
 
+        {/* 03 — Schröpfmassage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/schroepfmassage.jpg"
+              alt="Schröpfmassage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+        {/* 04 — Anticellulitemassage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/anticellulitemassage.jpg"
+              alt="Anticellulitemassage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+        {/* 05 — Kosmetische Lymphdrainage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/kosmetische-lymphdrainage.jpg"
+              alt="Kosmetische Lymphdrainage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+        {/* 06 — Fußzonenmassage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/fusszonenmassage.jpg"
+              alt="Fußzonenmassage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+        {/* 07 — Gesichtsmassage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/gesichtsmassage.jpg"
+              alt="Gesichtsmassage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+        {/* 08 — Sportmassage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/sportmassage.jpg"
+              alt="Sportmassage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+        {/* 09 — Rückenmassage */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/rueckenmassage.jpg"
+              alt="Rückenmassage"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+        {/* 10 — Ganzkörperpeeling */}
+        <div className="min-w-[52%] snap-center sm:min-w-[30%] lg:min-w-[22%]">
+          <div className="overflow-hidden rounded-[24px] bg-[#FAF7F2] shadow-sm">
+            <img
+              src="/massages/ganzkoerperpeeling.jpg"
+              alt="Ganzkörperpeeling"
+              className="block h-auto w-full"
+            />
+          </div>
+        </div>
+
+      </div>
+
+      {/* Scroll hint */}
+      <p className="mt-5 text-center text-xs uppercase tracking-[0.25em] text-[#9A8068]">
+        ← Wischen oder scrollen →
+      </p>
+
+    </div>
+
+  </div>
+</section>
       {/* PRICES */}
-      <section id="preise" className="bg-[#eee6dc]">
-        <div className="mx-auto max-w-5xl px-6 py-24">
+      <section id="preise" className="bg-[#6B5145]">
+  <div className="mx-auto max-w-5xl px-6 py-24">
 
-          <div className="text-center">
+    <div className="text-center">
 
-            <p className="text-sm uppercase tracking-[0.25em] text-[#96765c]">
-              Preisliste
-            </p>
+      <p className="text-sm uppercase tracking-[0.25em] text-[#DCC0B8]">
+        Preisliste
+      </p>
 
-            <h2 className="mt-4 text-3xl font-light md:text-4xl">
-              Meine Preise
-            </h2>
-
-            <p className="mx-auto mt-5 max-w-2xl text-[#74675d]">
+      <h2 className="mt-4 text-3xl font-light text-[#F8F3EE] md:text-4xl">
+        Meine Preise
+      </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-[#E8DED4]">
               Wählen Sie die passende Behandlung und Dauer.
             </p>
 
@@ -284,7 +350,7 @@ export default function Home() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-2">
 
-            {/* Rückenmassage */}
+           {/* Rückenmassage */}
             <div className="rounded-[28px] bg-[#faf7f2] p-7 shadow-sm">
 
               <h3 className="text-2xl font-light">
@@ -303,12 +369,11 @@ export default function Home() {
               </div>
             </div>
 
-
             {/* Ganzkörpermassage */}
             <div className="rounded-[28px] bg-[#faf7f2] p-7 shadow-sm">
 
               <h3 className="text-2xl font-light">
-                Ganzkörpermassage
+                Klassische Ganzkörper Wellness massage
               </h3>
 
               <div className="mt-5 space-y-3 text-[#74675d]">
@@ -321,7 +386,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
-                  <span>75 Min.</span>
+                  <span>70 Min.</span>
                   <span className="font-medium text-[#80654e]">
                     60 €
                   </span>
@@ -358,34 +423,6 @@ export default function Home() {
             </div>
 
 
-            {/* Klassische Massage */}
-            <div className="rounded-[28px] bg-[#faf7f2] p-7 shadow-sm">
-
-              <h3 className="text-2xl font-light">
-                Klassische Massage
-              </h3>
-
-              <div className="mt-5 space-y-3 text-[#74675d]">
-
-                <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
-                  <span>60 Min.</span>
-                  <span>&nbsp;</span>
-                </div>
-
-                <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
-                  <span>70 Min.</span>
-                  <span>&nbsp;</span>
-                </div>
-
-                <div className="flex justify-between">
-                  <span>90 Min.</span>
-                  <span>&nbsp;</span>
-                </div>
-
-              </div>
-            </div>
-
-
             {/* Hot-Stone */}
             <div className="rounded-[28px] bg-[#faf7f2] p-7 shadow-sm">
 
@@ -397,7 +434,9 @@ export default function Home() {
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
                   <span>60 Min.</span>
-                  <span>&nbsp;</span>
+                  <span className="font-medium text-[#80654e]">
+                    50 €
+                  </span>
                 </div>
 
               </div>
@@ -415,12 +454,16 @@ export default function Home() {
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
                   <span>30 Min.</span>
-                  <span>&nbsp;</span>
+                  <span className="font-medium text-[#80654e]">
+                    30 €
+                  </span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>60 Min.</span>
-                  <span>&nbsp;</span>
+                  <span className="font-medium text-[#80654e]">
+                    50 €
+                  </span>
                 </div>
 
               </div>
@@ -438,12 +481,7 @@ export default function Home() {
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
                   <span>30 Min.</span>
-                  <span>&nbsp;</span>
-                </div>
-
-                <div className="flex justify-between">
-                  <span>60 Min.</span>
-                  <span>&nbsp;</span>
+                  <span>30 €</span>
                 </div>
 
               </div>
@@ -461,12 +499,12 @@ export default function Home() {
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
                   <span>60 Min.</span>
-                  <span>&nbsp;</span>
+                  <span>50 €</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>70 Min.</span>
-                  <span>&nbsp;</span>
+                  <span>60 €</span>
                 </div>
 
               </div>
@@ -484,13 +522,9 @@ export default function Home() {
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
                   <span>30 Min.</span>
-                  <span>&nbsp;</span>
+                  <span>30 €</span>
                 </div>
 
-                <div className="flex justify-between">
-                  <span>60 Min.</span>
-                  <span>&nbsp;</span>
-                </div>
 
               </div>
             </div>
@@ -507,12 +541,7 @@ export default function Home() {
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
                   <span>30 Min.</span>
-                  <span>&nbsp;</span>
-                </div>
-
-                <div className="flex justify-between">
-                  <span>60 Min.</span>
-                  <span>&nbsp;</span>
+                  <span>30 €</span>
                 </div>
 
               </div>
@@ -530,33 +559,35 @@ export default function Home() {
 
                 <div className="flex justify-between border-b border-[#d9cfc3] pb-3">
                   <span>30 Min.</span>
-                  <span>&nbsp;</span>
+                  <span>30 €</span>
                 </div>
 
-                <div className="flex justify-between">
-                  <span>60 Min.</span>
-                  <span>&nbsp;</span>
-                </div>
 
               </div>
             </div>
 
+
+            </div>
+
           </div>
-        </div>
+      
       </section>
 
 
       {/* CERTIFICATES */}
-      <section id="zertifikate" className="px-6 py-28 lg:px-10">
-        <div className="mx-auto max-w-7xl">
+     <section
+  id="zertifikate"
+  className="bg-[#F6F0EA] px-6 py-28 lg:px-10"
+>
+  <div className="mx-auto max-w-7xl">
 
-          <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
+    <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
 
-            <div>
+      <div>
 
-              <p className="text-xs uppercase tracking-[0.35em] text-[#9a8068]">
-                Qualifikation
-              </p>
+        <p className="text-xs uppercase tracking-[0.35em] text-[#9a8068]">
+          Qualifikation
+        </p>
 
               <h2 className="mt-5 text-5xl font-light leading-tight text-[#4a4039]">
                 Erfahrung &
@@ -577,8 +608,7 @@ export default function Home() {
 
 
               {/* Zertifikate */}
-              <div className="mt-10 grid gap-6 sm:grid-cols-2">
-
+             <div className="mt-10 grid gap-6 sm:grid-cols-2">
                 {/* Zertifikat 1 */}
                 <div className="overflow-hidden rounded-[25px] bg-[#f8f4ef] shadow-sm">
 
@@ -588,14 +618,14 @@ export default function Home() {
                     className="h-auto w-full object-contain"
                   />
 
-                  <div className="p-6">
+                  <div className="p-6 text-center">
 
-                    <span className="text-xs uppercase tracking-[0.2em] text-[#9a8068]">
-                      Zertifikat
+                    <span className="text-m uppercase tracking-[0.2em] text-[#9a8068]">
+                      Zertifikat #1
                     </span>
 
                     <p className="mt-3 text-lg font-light text-[#4d433c]">
-                      Massage
+                      
                     </p>
 
                   </div>
@@ -611,14 +641,14 @@ export default function Home() {
                     className="h-auto w-full object-contain"
                   />
 
-                  <div className="p-6">
+                  <div className="p-6 text-center">
 
-                    <span className="text-xs uppercase tracking-[0.2em] text-[#9a8068]">
-                      Zertifikat
+                    <span className="text-m uppercase tracking-[0.2em] text-[#9a8068]">
+                      Zertifikat #2
                     </span>
 
                     <p className="mt-3 text-lg font-light text-[#4d433c]">
-                      Massage
+                      
                     </p>
 
                   </div>

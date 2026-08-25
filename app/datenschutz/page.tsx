@@ -48,7 +48,7 @@ export default function Datenschutz() {
                 href="mailto:eppmaxim1982@gmail.com"
                 className="text-[#96765c] hover:underline"
               >
-                eppmaxim1982@gmail.com
+                olessiaepp@gmail.com
               </a>
             </p>
           </section>
