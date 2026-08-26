@@ -213,10 +213,8 @@ export default function Home(): import("react").JSX.Element {
       </header>
 
 
-      {/* ===================================================== */}
       {/* HERO */}
-      {/* ===================================================== */}
-
+      
       <section
         className="relative min-h-[680px] overflow-hidden bg-cover bg-center sm:min-h-[720px]"
         style={{
@@ -599,10 +597,9 @@ export default function Home(): import("react").JSX.Element {
     <div className="grid grid-cols-2">
 
 
-      {/* ========================================= */}
+      
       {/* 01 — KÖRPER */}
-      {/* ========================================= */}
-
+      
       <div className="bg-[#2E2723] px-3 py-7 text-[#F6F0EA] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
         <div className="mb-7 sm:mb-9 lg:mb-12">
@@ -715,9 +712,9 @@ export default function Home(): import("react").JSX.Element {
 
 
 
-      {/* ========================================= */}
+     
       {/* 02 — GESICHT */}
-      {/* ========================================= */}
+      
 
       <div className="border border-[#2E2723] bg-[#F6F0EA] px-3 py-7 text-[#4A3831] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
@@ -759,9 +756,9 @@ export default function Home(): import("react").JSX.Element {
 
 
 
-      {/* ========================================= */}
+      
       {/* 03 — SPEZIALMASSAGEN */}
-      {/* ========================================= */}
+     
 
       <div className="border border-[#2E2723] bg-[#F6F0EA] px-3 py-7 text-[#4A3831] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
@@ -863,9 +860,9 @@ export default function Home(): import("react").JSX.Element {
 
 
 
-      {/* ========================================= */}
+      
       {/* 04 — MASSAGE MIT ETWAS */}
-      {/* ========================================= */}
+      
 
       <div className="bg-[#2E2723] px-3 py-7 text-[#F6F0EA] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
@@ -945,9 +942,9 @@ export default function Home(): import("react").JSX.Element {
 
 
 
-      {/* ========================================= */}
+      
       {/* 05 — WELLNESS & PFLEGE */}
-      {/* ========================================= */}
+      
 
       <div className="bg-[#2E2723] px-3 py-7 text-[#F6F0EA] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
@@ -999,9 +996,9 @@ export default function Home(): import("react").JSX.Element {
 
 
 
-      {/* ========================================= */}
+      
       {/* WELLNESS BILD */}
-      {/* ========================================= */}
+      
 
       <div className="relative min-h-[260px] overflow-hidden sm:min-h-[300px] lg:min-h-[420px]">
 
@@ -1020,9 +1017,9 @@ export default function Home(): import("react").JSX.Element {
 
 </section>
 
-      {/* ===================================================== */}
+      
       {/* CERTIFICATES */}
-      {/* ===================================================== */}
+      
 
       <section
         id="zertifikate"
@@ -1105,133 +1102,93 @@ export default function Home(): import("react").JSX.Element {
       </section>
 
 
-      {/* ===================================================== */}
-      {/* CONTACT */}
-      {/* ===================================================== */}
+      
+{/* CONTACT */}
 
-      <section
-        id="kontakt"
-        className="px-5 pb-20 sm:px-6 sm:pb-28 lg:px-10"
+<section
+  id="kontakt"
+  className="px-5 pb-20 sm:px-6 sm:pb-28 lg:px-10"
+>
+  <div className="mx-auto max-w-7xl">
+
+    <div className="rounded-[30px] bg-[#2E2723] px-6 py-16 text-center text-white sm:rounded-[45px] sm:px-10 sm:py-20 md:px-16">
+
+      {/* TITLE */}
+
+      <p className="text-xs uppercase tracking-[0.35em] text-[#D9C9BA]">
+        Kontakt
+      </p>
+
+      <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-light leading-tight sm:mt-6 sm:text-5xl md:text-7xl">
+        Zeit für eine
+
+        <span className="block font-serif italic text-[#E2D5C8]">
+          Auszeit?
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#E2D9D1] sm:mt-7 sm:text-base">
+        Vereinbaren Sie Ihren persönlichen Termin
+        ganz einfach über WhatsApp.
+      </p>
+
+
+      {/* WHATSAPP BUTTON */}
+
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-flex rounded-full bg-[#F7F3ED] px-7 py-4 text-sm text-[#594A40] transition hover:bg-white sm:mt-10 sm:px-9"
       >
-
-        <div className="mx-auto max-w-7xl">
-
-          <div className="rounded-[30px] bg-[#2E2723] px-6 py-16 text-center text-white sm:rounded-[45px] sm:px-10 sm:py-20 md:px-16">
-
-            <p className="text-xs uppercase tracking-[0.35em] text-[#D9C9BA]">
-              Kontakt
-            </p>
-
-            <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-light leading-tight sm:mt-6 sm:text-5xl md:text-7xl">
-
-              Zeit für eine
-
-              <span className="block font-serif italic text-[#E2D5C8]">
-                Auszeit?
-              </span>
-
-            </h2>
-
-            <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#E2D9D1] sm:mt-7 sm:text-base">
-              Vereinbaren Sie Ihren persönlichen Termin
-              ganz einfach über WhatsApp.
-            </p>
+        Termin per WhatsApp buchen
+      </a>
 
 
-            {/* WHATSAPP BUTTON */}
+      {/* CONTACT INFORMATION */}
 
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-full bg-[#F7F3ED] px-7 py-4 text-sm text-[#594A40] transition hover:bg-white sm:mt-10 sm:px-9"
-            >
-              Termin per WhatsApp buchen
-            </a>
+      <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-8 border-t border-white/20 pt-8 text-sm sm:mt-16 sm:grid-cols-2 sm:pt-10">
 
+        {/* ADDRESS */}
 
-            {/* CONTACT INFORMATION */}
+        <div>
+          <p className="text-[#CBB9A9]">
+            Adresse
+          </p>
 
-            <div className="mx-auto mt-12 grid max-w-3xl gap-10 border-t border-white/20 pt-8 text-sm sm:mt-16 sm:pt-10 md:grid-cols-2 md:gap-8">
-
-
-              {/* ADDRESS & OPENING HOURS */}
-
-              <div>
-
-                {/* OPENING HOURS */}
-
-                <div>
-
-                  <p className="text-[#CBB9A9]">
-                    Öffnungszeiten
-                  </p>
-
-                  <div className="mt-3 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
-
-                    <span className="font-light text-[#F7F3ED]">
-                      Mo – Fr
-                    </span>
-
-                    <span className="hidden h-px w-8 bg-[#CBB9A9]/50 sm:block"></span>
-
-                    <span className="font-light text-[#F7F3ED]">
-                      15:00 – 20:00 Uhr
-                    </span>
-
-                  </div>
-
-                </div>
-
-
-                {/* ADDRESS */}
-
-                <div className="mt-7">
-
-                  <p className="text-[#CBB9A9]">
-                    Adresse
-                  </p>
-
-                  <p className="mt-3 leading-7">
-                    An den Eichen 1A
-                    <br />
-                    59823 Arnsberg
-                  </p>
-
-                </div>
-
-              </div>
-
-
-              {/* PHONE */}
-
-              <div>
-
-                <p className="text-[#CBB9A9]">
-                  Telefon & WhatsApp
-                </p>
-
-                <a
-                  href="tel:+4915901316377"
-                  className="mt-3 inline-block transition hover:text-[#E2D5C8]"
-                >
-                  +49 159 01316377
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
+          <p className="mt-3 leading-7">
+            An den Eichen 1A
+            <br />
+            59823 Arnsberg
+          </p>
         </div>
 
-      </section>
 
+        {/* PHONE */}
 
-      {/* ===================================================== */}
+        <div>
+          <p className="text-[#CBB9A9]">
+            Telefon & WhatsApp
+          </p>
+
+          <a
+            href="tel:+4915901316377"
+            className="mt-3 inline-block transition hover:text-[#E2D5C8]"
+          >
+            +49 159 01316377
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+     
       {/* FOOTER */}
-      {/* ===================================================== */}
+      
 
       <footer className="border-t border-[#DDD4CA] px-6 py-8 sm:py-10 lg:px-10">
 
