@@ -1170,7 +1170,7 @@ export default function Home(): import("react").JSX.Element {
                   <div className="mt-3 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
 
                     <span className="font-light text-[#F7F3ED]">
-                      Mo – So
+                      Mo – Fr
                     </span>
 
                     <span className="hidden h-px w-8 bg-[#CBB9A9]/50 sm:block"></span>
