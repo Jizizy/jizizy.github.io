@@ -300,7 +300,7 @@ export default function Home(): import("react").JSX.Element {
         </p>
 
         {/* PHOTO */}
-<div className="mt-8 w-full max-w-[300px] overflow-hidden rounded-[56px]">
+<div className="mt-8 w-full max-w-[260px] overflow-hidden rounded-[56px]">
   <img
     src="/about.jpg"
     alt="Olessia – Wellness und Massage"
@@ -577,17 +577,17 @@ export default function Home(): import("react").JSX.Element {
   <div className="mx-auto max-w-7xl">
 
     {/* HEADER */}
-    <div className="px-6 pb-16 pt-28 text-center lg:px-10">
+    <div className="px-4 pb-10 pt-20 text-center sm:px-6 sm:pb-16 sm:pt-28 lg:px-10">
 
-      <p className="text-xs uppercase tracking-[0.4em] text-[#947963]">
+      <p className="text-[10px] uppercase tracking-[0.35em] text-[#947963] sm:text-xs sm:tracking-[0.4em]">
         Wellness & Massage
       </p>
 
-      <h2 className="mt-3 font-serif text-6xl font-light italic leading-none text-[#655346] sm:text-7xl md:text-8xl">
+      <h2 className="mt-2 font-serif text-5xl font-light italic leading-none text-[#655346] sm:mt-3 sm:text-7xl md:text-8xl">
         Preise
       </h2>
 
-      <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#74675D]">
+      <p className="mx-auto mt-4 max-w-xl text-xs leading-6 text-[#74675D] sm:mt-6 sm:text-sm sm:leading-7">
         Entdecken Sie unsere Behandlungen und wählen Sie
         die passende Dauer für Ihre persönliche Auszeit.
       </p>
@@ -595,495 +595,460 @@ export default function Home(): import("react").JSX.Element {
     </div>
 
 
-    {/* MOBILE SCROLL CONTAINER */}
-
-    <div className="overflow-x-auto">
-
-      <div className="min-w-[760px] lg:min-w-0">
-
-        {/* PRICE GRID */}
-
-        <div className="grid grid-cols-2">
+    {/* PRICE GRID */}
+    <div className="grid grid-cols-2">
 
 
-          {/* ========================================= */}
-          {/* 01 — KÖRPER */}
-          {/* ========================================= */}
+      {/* ========================================= */}
+      {/* 01 — KÖRPER */}
+      {/* ========================================= */}
 
-          <div className="bg-[#2E2723] px-8 py-14 text-[#F6F0EA] md:px-14 lg:px-16">
+      <div className="bg-[#2E2723] px-4 py-8 text-[#F6F0EA] sm:px-8 sm:py-14 md:px-14 lg:px-16">
 
-            <div className="mb-12">
+        <div className="mb-7 sm:mb-12">
 
-              <p className="text-xs uppercase tracking-[0.35em] text-[#D9B898]">
-                01
-              </p>
+          <p className="text-[9px] uppercase tracking-[0.3em] text-[#D9B898] sm:text-xs sm:tracking-[0.35em]">
+            01
+          </p>
 
-              <h3 className="mt-3 font-serif text-4xl font-light italic">
-                Körper
-              </h3>
+          <h3 className="mt-2 font-serif text-2xl font-light italic sm:mt-3 sm:text-4xl">
+            Körper
+          </h3>
 
-            </div>
+        </div>
 
 
-            {/* Klassische Wellnessmassage */}
+        {/* Klassische Wellnessmassage */}
+        <div className="border-b border-white/20 pb-4 sm:pb-7">
 
-            <div className="border-b border-white/20 pb-7">
+          <div className="flex items-start justify-between gap-3 sm:items-center sm:gap-6">
 
-              <div className="flex items-center justify-between gap-6">
+            <h4 className="text-sm font-light sm:text-xl">
+              Klassische Wellnessmassage
+            </h4>
 
-                <h4 className="text-xl font-light">
-                  Klassische Wellnessmassage
-                </h4>
+            <div className="space-y-1.5 text-right text-[10px] sm:space-y-3 sm:text-sm">
 
-                <div className="space-y-3 text-right text-sm">
+              <div className="flex justify-between gap-3 sm:gap-6">
+                <span className="text-[#D9C9BA]">
+                  60 Min.
+                </span>
 
-                  <div className="flex justify-between gap-6">
-
-                    <span className="text-[#D9C9BA]">
-                      60 Min.
-                    </span>
-
-                    <span>
-                      50 €
-                    </span>
-
-                  </div>
-
-                  <div className="flex justify-between gap-6">
-
-                    <span className="text-[#D9C9BA]">
-                      70 Min.
-                    </span>
-
-                    <span>
-                      60 €
-                    </span>
-
-                  </div>
-
-                  <div className="flex justify-between gap-6">
-
-                    <span className="text-[#D9C9BA]">
-                      90 Min.
-                    </span>
-
-                    <span>
-                      75 €
-                    </span>
-
-                  </div>
-
-                </div>
-
+                <span>
+                  50 €
+                </span>
               </div>
 
-            </div>
+              <div className="flex justify-between gap-3 sm:gap-6">
+                <span className="text-[#D9C9BA]">
+                  70 Min.
+                </span>
 
-
-            {/* Rückenmassage */}
-
-            <div className="border-b border-white/20 py-7">
-
-              <div className="flex items-center justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Rückenmassage
-                </h4>
-
-                <div className="text-right text-sm">
-
-                  <span className="text-[#D9C9BA]">
-                    30 Min.
-                  </span>
-
-                  <span className="ml-6">
-                    30 €
-                  </span>
-
-                </div>
-
+                <span>
+                  60 €
+                </span>
               </div>
 
-            </div>
+              <div className="flex justify-between gap-3 sm:gap-6">
+                <span className="text-[#D9C9BA]">
+                  90 Min.
+                </span>
 
-
-            {/* Fußzonenmassage */}
-
-            <div className="pt-7">
-
-              <div className="flex items-center justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Fußzonenmassage
-                </h4>
-
-                <div className="text-right text-sm">
-
-                  <span className="text-[#D9C9BA]">
-                    30 Min.
-                  </span>
-
-                  <span className="ml-6">
-                    30 €
-                  </span>
-
-                </div>
-
+                <span>
+                  75 €
+                </span>
               </div>
 
             </div>
 
           </div>
 
+        </div>
 
 
-          {/* ========================================= */}
-          {/* 02 — GESICHT */}
-          {/* ========================================= */}
+        {/* Rückenmassage */}
+        <div className="border-b border-white/20 py-4 sm:py-7">
 
-          <div className="border border-[#2E2723] bg-[#F6F0EA] px-8 py-14 text-[#4A3831] md:px-14 lg:px-16">
+          <div className="flex items-center justify-between gap-3 sm:gap-6">
 
-            <div className="mb-12">
+            <h4 className="text-sm font-light sm:text-xl">
+              Rückenmassage
+            </h4>
 
-              <p className="text-xs uppercase tracking-[0.35em] text-[#947963]">
-                02
-              </p>
+            <div className="text-right text-[10px] sm:text-sm">
 
-              <h3 className="mt-3 font-serif text-4xl font-light italic text-[#655346]">
-                Gesicht
-              </h3>
+              <span className="text-[#D9C9BA]">
+                30 Min.
+              </span>
 
-            </div>
-
-
-            {/* Gesichtsmassage */}
-
-            <div className="border-b border-[#D9CFC3] pb-7">
-
-              <div className="flex items-center justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Gesichtsmassage
-                </h4>
-
-                <div className="text-right text-sm">
-
-                  <span className="text-[#80654E]">
-                    30 Min.
-                  </span>
-
-                  <span className="ml-6 font-medium text-[#655346]">
-                    30 €
-                  </span>
-
-                </div>
-
-              </div>
+              <span className="ml-3 sm:ml-6">
+                30 €
+              </span>
 
             </div>
 
           </div>
 
+        </div>
 
 
-          {/* ========================================= */}
-          {/* 03 — SPEZIALMASSAGEN */}
-          {/* ========================================= */}
+        {/* Fußzonenmassage */}
+        <div className="pt-4 sm:pt-7">
 
-          <div className="border border-[#2E2723] bg-[#F6F0EA] px-8 py-14 text-[#4A3831] md:px-14 lg:px-16">
+          <div className="flex items-center justify-between gap-3 sm:gap-6">
 
-            <div className="mb-12">
+            <h4 className="text-sm font-light sm:text-xl">
+              Fußzonenmassage
+            </h4>
 
-              <p className="text-xs uppercase tracking-[0.35em] text-[#947963]">
-                03
-              </p>
+            <div className="text-right text-[10px] sm:text-sm">
 
-              <h3 className="mt-3 font-serif text-4xl font-light italic text-[#655346]">
-                Spezialmassagen
-              </h3>
+              <span className="text-[#D9C9BA]">
+                30 Min.
+              </span>
 
-            </div>
-
-
-            {/* Sportmassage */}
-
-            <div className="border-b border-[#D9CFC3] pb-7">
-
-              <div className="flex items-center justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Sportmassage
-                </h4>
-
-                <div className="text-right text-sm">
-
-                  <span className="text-[#80654E]">
-                    30 Min.
-                  </span>
-
-                  <span className="ml-6 font-medium text-[#655346]">
-                    30 €
-                  </span>
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-            {/* Anticellulitemassage */}
-
-            <div className="border-b border-[#D9CFC3] py-7">
-
-              <div className="flex items-center justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Anticellulitemassage
-                </h4>
-
-                <div className="text-right text-sm">
-
-                  <span className="text-[#80654E]">
-                    30 Min.
-                  </span>
-
-                  <span className="ml-6 font-medium text-[#655346]">
-                    30 €
-                  </span>
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-            {/* Kosmetische Lymphdrainage */}
-
-            <div className="pt-7">
-
-              <div className="flex items-start justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Kosmetische Lymphdrainage
-                </h4>
-
-                <div className="space-y-3 text-right text-sm">
-
-                  <div className="flex justify-between gap-6">
-
-                    <span className="text-[#80654E]">
-                      60 Min.
-                    </span>
-
-                    <span className="font-medium text-[#655346]">
-                      50 €
-                    </span>
-
-                  </div>
-
-                  <div className="flex justify-between gap-6">
-
-                    <span className="text-[#80654E]">
-                      70 Min.
-                    </span>
-
-                    <span className="font-medium text-[#655346]">
-                      60 €
-                    </span>
-
-                  </div>
-
-                </div>
-
-              </div>
+              <span className="ml-3 sm:ml-6">
+                30 €
+              </span>
 
             </div>
 
           </div>
-
-
-
-          {/* ========================================= */}
-          {/* 04 — MASSAGE MIT ETWAS */}
-          {/* ========================================= */}
-
-          <div className="bg-[#2E2723] px-8 py-14 text-[#F6F0EA] md:px-14 lg:px-16">
-
-            <div className="mb-12">
-
-              <p className="text-xs uppercase tracking-[0.35em] text-[#D9B898]">
-                04
-              </p>
-
-              <h3 className="mt-3 font-serif text-4xl font-light italic">
-                Massage Mit Etwas
-              </h3>
-
-            </div>
-
-
-            {/* Hot Stone */}
-
-            <div className="border-b border-white/20 pb-7">
-
-              <div className="flex items-center justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Hot-Stone-Massage
-                </h4>
-
-                <div className="text-right text-sm">
-
-                  <span className="text-[#D9C9BA]">
-                    60 Min.
-                  </span>
-
-                  <span className="ml-6">
-                    50 €
-                  </span>
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-            {/* Schröpfmassage */}
-
-            <div className="pt-7">
-
-              <div className="flex items-start justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Schröpfmassage
-                </h4>
-
-                <div className="space-y-3 text-right text-sm">
-
-                  <div className="flex justify-between gap-6">
-
-                    <span className="text-[#D9C9BA]">
-                      30 Min.
-                    </span>
-
-                    <span>
-                      30 €
-                    </span>
-
-                  </div>
-
-                  <div className="flex justify-between gap-6">
-
-                    <span className="text-[#D9C9BA]">
-                      60 Min.
-                    </span>
-
-                    <span>
-                      50 €
-                    </span>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          {/* ========================================= */}
-          {/* 05 — WELLNESS & PFLEGE */}
-          {/* ========================================= */}
-
-          <div className="bg-[#2E2723] px-8 py-14 text-[#F6F0EA] md:px-14 lg:px-16">
-
-            <div className="mb-12">
-
-              <p className="text-xs uppercase tracking-[0.35em] text-[#D9B898]">
-                05
-              </p>
-
-              <h3 className="mt-3 font-serif text-4xl font-light italic">
-                Wellness & Pflege
-              </h3>
-
-            </div>
-
-
-            {/* Ganzkörperpeeling */}
-
-            <div className="border-b border-white/20 pb-7">
-
-              <div className="flex items-center justify-between gap-6">
-
-                <h4 className="text-xl font-light">
-                  Ganzkörperpeeling
-                </h4>
-
-                <div className="text-right text-sm">
-
-                  <span className="text-[#D9C9BA]">
-                    60 Min.
-                  </span>
-
-                  <span className="ml-6">
-                    50 €
-                  </span>
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <div className="mt-16">
-
-              <p className="max-w-sm text-sm leading-7 text-[#D9C9BA]">
-                Zeit für Entspannung, Pflege und
-                persönliche Wohlfühlmomente.
-              </p>
-
-            </div>
-
-          </div>
-
-
-
-          {/* ========================================= */}
-          {/* WELLNESS BILD */}
-          {/* ========================================= */}
-
-          <div className="relative min-h-[420px] overflow-hidden">
-
-            <img
-              src="/images/wellness.jpg"
-              alt="Wellness und Entspannung"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-
-          </div>
-
 
         </div>
 
       </div>
 
+
+
+      {/* ========================================= */}
+      {/* 02 — GESICHT */}
+      {/* ========================================= */}
+
+      <div className="border border-[#2E2723] bg-[#F6F0EA] px-4 py-8 text-[#4A3831] sm:px-8 sm:py-14 md:px-14 lg:px-16">
+
+        <div className="mb-7 sm:mb-12">
+
+          <p className="text-[9px] uppercase tracking-[0.3em] text-[#947963] sm:text-xs sm:tracking-[0.35em]">
+            02
+          </p>
+
+          <h3 className="mt-2 font-serif text-2xl font-light italic text-[#655346] sm:mt-3 sm:text-4xl">
+            Gesicht
+          </h3>
+
+        </div>
+
+
+        {/* Gesichtsmassage */}
+        <div className="border-b border-[#D9CFC3] pb-4 sm:pb-7">
+
+          <div className="flex items-center justify-between gap-3 sm:gap-6">
+
+            <h4 className="text-sm font-light sm:text-xl">
+              Gesichtsmassage
+            </h4>
+
+            <div className="text-right text-[10px] sm:text-sm">
+
+              <span className="text-[#80654E]">
+                30 Min.
+              </span>
+
+              <span className="ml-3 font-medium text-[#655346] sm:ml-6">
+                30 €
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      {/* ========================================= */}
+      {/* 03 — SPEZIALMASSAGEN */}
+      {/* ========================================= */}
+
+      <div className="border border-[#2E2723] bg-[#F6F0EA] px-4 py-8 text-[#4A3831] sm:px-8 sm:py-14 md:px-14 lg:px-16">
+
+        <div className="mb-7 sm:mb-12">
+
+          <p className="text-[9px] uppercase tracking-[0.3em] text-[#947963] sm:text-xs sm:tracking-[0.35em]">
+            03
+          </p>
+
+          <h3 className="mt-2 font-serif text-2xl font-light italic text-[#655346] sm:mt-3 sm:text-4xl">
+            Spezialmassagen
+          </h3>
+
+        </div>
+
+
+        {/* Sportmassage */}
+        <div className="border-b border-[#D9CFC3] pb-4 sm:pb-7">
+
+          <div className="flex items-center justify-between gap-3 sm:gap-6">
+
+            <h4 className="text-sm font-light sm:text-xl">
+              Sportmassage
+            </h4>
+
+            <div className="text-right text-[10px] sm:text-sm">
+
+              <span className="text-[#80654E]">
+                30 Min.
+              </span>
+
+              <span className="ml-3 font-medium text-[#655346] sm:ml-6">
+                30 €
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* Anticellulitemassage */}
+        <div className="border-b border-[#D9CFC3] py-4 sm:py-7">
+
+          <div className="flex items-center justify-between gap-3 sm:gap-6">
+
+            <h4 className="text-sm font-light sm:text-xl">
+              Anticellulitemassage
+            </h4>
+
+            <div className="text-right text-[10px] sm:text-sm">
+
+              <span className="text-[#80654E]">
+                30 Min.
+              </span>
+
+              <span className="ml-3 font-medium text-[#655346] sm:ml-6">
+                30 €
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* Kosmetische Lymphdrainage */}
+        <div className="pt-4 sm:pt-7">
+
+          <div className="flex items-start justify-between gap-3 sm:gap-6">
+
+            <h4 className="text-sm font-light sm:text-xl">
+              Kosmetische Lymphdrainage
+            </h4>
+
+            <div className="space-y-1.5 text-right text-[10px] sm:space-y-3 sm:text-sm">
+
+              <div className="flex justify-between gap-3 sm:gap-6">
+
+                <span className="text-[#80654E]">
+                  60 Min.
+                </span>
+
+                <span className="font-medium text-[#655346]">
+                  50 €
+                </span>
+
+              </div>
+
+              <div className="flex justify-between gap-3 sm:gap-6">
+
+                <span className="text-[#80654E]">
+                  70 Min.
+                </span>
+
+                <span className="font-medium text-[#655346]">
+                  60 €
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      {/* ========================================= */}
+      {/* 04 — MASSAGE MIT ETWAS */}
+      {/* ========================================= */}
+
+      <div className="bg-[#2E2723] px-4 py-8 text-[#F6F0EA] sm:px-8 sm:py-14 md:px-14 lg:px-16">
+
+        <div className="mb-7 sm:mb-12">
+
+          <p className="text-[9px] uppercase tracking-[0.3em] text-[#D9B898] sm:text-xs sm:tracking-[0.35em]">
+            04
+          </p>
+
+          <h3 className="mt-2 font-serif text-2xl font-light italic sm:mt-3 sm:text-4xl">
+            Massage Mit Etwas
+          </h3>
+
+        </div>
+
+
+        {/* Hot Stone */}
+        <div className="border-b border-white/20 pb-4 sm:pb-7">
+
+          <div className="flex items-center justify-between gap-3 sm:gap-6">
+
+            <h4 className="text-sm font-light sm:text-xl">
+              Hot-Stone-Massage
+            </h4>
+
+            <div className="text-right text-[10px] sm:text-sm">
+
+              <span className="text-[#D9C9BA]">
+                60 Min.
+              </span>
+
+              <span className="ml-3 sm:ml-6">
+                50 €
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* Schröpfmassage */}
+        <div className="pt-4 sm:pt-7">
+
+          <div className="flex items-start justify-between gap-3 sm:gap-6">
+
+            <h4 className="text-sm font-light sm:text-xl">
+              Schröpfmassage
+            </h4>
+
+            <div className="space-y-1.5 text-right text-[10px] sm:space-y-3 sm:text-sm">
+
+              <div className="flex justify-between gap-3 sm:gap-6">
+
+                <span className="text-[#D9C9BA]">
+                  30 Min.
+                </span>
+
+                <span>
+                  30 €
+                </span>
+
+              </div>
+
+              <div className="flex justify-between gap-3 sm:gap-6">
+
+                <span className="text-[#D9C9BA]">
+                  60 Min.
+                </span>
+
+                <span>
+                  50 €
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      {/* ========================================= */}
+      {/* 05 — WELLNESS & PFLEGE */}
+      {/* ========================================= */}
+
+      <div className="bg-[#2E2723] px-4 py-8 text-[#F6F0EA] sm:px-8 sm:py-14 md:px-14 lg:px-16">
+
+        <div className="mb-7 sm:mb-12">
+
+          <p className="text-[9px] uppercase tracking-[0.3em] text-[#D9B898] sm:text-xs sm:tracking-[0.35em]">
+            05
+          </p>
+
+          <h3 className="mt-2 font-serif text-2xl font-light italic sm:mt-3 sm:text-4xl">
+            Wellness & Pflege
+          </h3>
+
+        </div>
+
+
+        {/* Ganzkörperpeeling */}
+        <div className="border-b border-white/20 pb-4 sm:pb-7">
+
+          <div className="flex items-center justify-between gap-3 sm:gap-6">
+
+            <h4 className="text-sm font-light sm:text-xl">
+              Ganzkörperpeeling
+            </h4>
+
+            <div className="text-right text-[10px] sm:text-sm">
+
+              <span className="text-[#D9C9BA]">
+                60 Min.
+              </span>
+
+              <span className="ml-3 sm:ml-6">
+                50 €
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div className="mt-8 sm:mt-16">
+
+          <p className="max-w-sm text-[10px] leading-5 text-[#D9C9BA] sm:text-sm sm:leading-7">
+            Zeit für Entspannung, Pflege und
+            persönliche Wohlfühlmomente.
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      {/* ========================================= */}
+      {/* WELLNESS BILD */}
+      {/* ========================================= */}
+
+      <div className="relative min-h-[260px] overflow-hidden sm:min-h-[420px]">
+
+        <img
+          src="/images/wellness.jpg"
+          alt="Wellness und Entspannung"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+
+      </div>
+
+
     </div>
-
-
-    {/* MOBILE SCROLL HINT */}
-
-    <p className="px-6 py-5 text-center text-[10px] uppercase tracking-[0.25em] text-[#947963] sm:hidden">
-      ← Wischen, um den gesamten Preisbereich zu sehen →
-    </p>
-
   </div>
 
 </section>
