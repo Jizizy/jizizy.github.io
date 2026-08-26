@@ -285,7 +285,7 @@ export default function Home(): import("react").JSX.Element {
 
       {/* ABOUT */}
 <section
-  id="ueber-uns"
+  id="ueber-mich"
   className="bg-[#F6F0EA] px-6 py-24 lg:px-10 lg:py-28"
 >
   <div className="mx-auto max-w-7xl">
