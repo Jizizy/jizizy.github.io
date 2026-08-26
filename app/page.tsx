@@ -57,7 +57,7 @@ export default function Home(): import("react").JSX.Element {
           <nav className="hidden items-center gap-6 text-sm md:flex lg:gap-8">
 
             <a
-              href="#ueber-uns"
+              href="#ueber-mich"
               className="text-[#fffaf5] drop-shadow-md transition hover:text-[#e6d2bd]"
             >
               Über mich
@@ -167,7 +167,7 @@ export default function Home(): import("react").JSX.Element {
           <nav className="flex flex-col px-6 py-5">
 
             <a
-              href="#ueber-uns"
+              href="#ueber-mich"
               onClick={closeMenu}
               className="border-b border-white/10 py-4 text-sm text-[#F7F3ED]"
             >
@@ -283,60 +283,65 @@ export default function Home(): import("react").JSX.Element {
       </section>
 
 
-      {/* ===================================================== */}
       {/* ABOUT */}
-      {/* ===================================================== */}
+<section
+  id="ueber-uns"
+  className="bg-[#F6F0EA] px-6 py-24 lg:px-10 lg:py-28"
+>
+  <div className="mx-auto max-w-7xl">
 
-      <section
-        id="ueber-uns"
-        className="bg-[#F6F0EA] px-6 py-20 sm:py-24 lg:px-10 lg:py-28"
-      >
+    <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
 
-        <div className="mx-auto max-w-7xl">
+      {/* LEFT SIDE — TITLE + PHOTO */}
+      <div>
 
-          <div className="grid gap-10 sm:gap-14 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+        <p className="text-xs uppercase tracking-[0.35em] text-[#9A8068]">
+          Über mich
+        </p>
 
-            <div>
+        {/* PHOTO */}
+<div className="mt-8 w-full max-w-[300px] overflow-hidden rounded-[56px]">
+  <img
+    src="/about.jpg"
+    alt="Olessia – Wellness und Massage"
+    className="h-auto w-full object-cover"
+  />
+</div>
 
-              <p className="text-xs uppercase tracking-[0.35em] text-[#9a8068]">
-                Über mich
-              </p>
-
-            </div>
-
-
-            <div>
-
-              <h2 className="max-w-3xl text-4xl font-light leading-tight tracking-[-0.03em] text-[#4A4039] sm:text-5xl md:text-6xl">
-
-                Ihre persönliche{" "}
-
-                <span className="font-serif italic">
-                  Auszeit.
-                </span>
-
-              </h2>
-
-              <p className="mt-6 max-w-2xl text-base leading-7 text-[#756960] sm:mt-8 sm:text-lg sm:leading-8">
-                Ich helfe Ihnen gerne dabei, Ihr Wohlbefinden zu steigern,
-                indem ich Verspannungen und Muskelblockaden gezielt löse.
-                Bei mir erwartet Sie außerdem ein verwöhnendes
-                Ganzkörper-Peeling, das Ihrer Haut ein seidig-glattes Gefühl
-                verleiht.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+      </div>
 
 
-      {/* ===================================================== */}
+      {/* RIGHT SIDE — TEXT */}
+      <div className="lg:pt-12">
+
+        <h2 className="max-w-3xl text-5xl font-light leading-tight tracking-[-0.03em] text-[#4A3831] md:text-6xl">
+
+          Ihre persönliche{" "}
+
+          <span className="font-serif italic text-[#947963]">
+            Auszeit.
+          </span>
+
+        </h2>
+
+
+        <p className="mt-8 max-w-2xl text-lg leading-8 text-[#756960]">
+          Ich helfe Ihnen gerne dabei, Ihr Wohlbefinden zu steigern,
+          indem ich Verspannungen und Muskelblockaden gezielt löse.
+          Bei mir erwartet Sie außerdem ein verwöhnendes
+          Ganzkörper-Peeling, das Ihrer Haut ein seidig-glattes Gefühl
+          verleiht.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+     
       {/* MASSAGES */}
-      {/* ===================================================== */}
 
       <section
         id="massagen"
@@ -349,7 +354,7 @@ export default function Home(): import("react").JSX.Element {
 
           <div className="mb-10 text-center sm:mb-14">
 
-            <p className="text-xs uppercase tracking-[0.35em] text-[#9A8068]">
+            <p className="text-xs uppercase tracking-[0.35em] text-[#F6F0EA]">
               Behandlungen
             </p>
 
@@ -357,7 +362,7 @@ export default function Home(): import("react").JSX.Element {
 
               Meine{" "}
 
-              <span className="font-serif italic text-[#947963]">
+              <span className="font-serif italic text-[#F6F0EA]">
                 Massagen
               </span>
 
@@ -555,7 +560,7 @@ export default function Home(): import("react").JSX.Element {
             </div>
 
 
-            <p className="mt-4 text-center text-[10px] uppercase tracking-[0.25em] text-[#9A8068] sm:text-xs">
+            <p className="mt-4 text-center text-[10px] uppercase tracking-[0.25em] text-[#F6F0EA] sm:text-xs">
               ← Wischen oder scrollen →
             </p>
 
