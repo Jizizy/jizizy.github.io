@@ -577,17 +577,17 @@ export default function Home(): import("react").JSX.Element {
   <div className="mx-auto max-w-7xl">
 
     {/* HEADER */}
-    <div className="px-6 pb-14 pt-24 text-center lg:px-10 lg:pb-16 lg:pt-28">
+    <div className="px-4 pb-10 pt-20 text-center sm:px-6 sm:pb-14 sm:pt-24 lg:px-10 lg:pb-16 lg:pt-28">
 
-      <p className="text-[10px] uppercase tracking-[0.4em] text-[#947963] lg:text-xs">
+      <p className="text-[9px] uppercase tracking-[0.35em] text-[#947963] sm:text-xs sm:tracking-[0.4em]">
         Wellness & Massage
       </p>
 
-      <h2 className="mt-3 font-serif text-6xl font-light italic leading-none text-[#655346] md:text-8xl">
+      <h2 className="mt-3 font-serif text-5xl font-light italic leading-none text-[#655346] sm:text-6xl md:text-8xl">
         Preise
       </h2>
 
-      <p className="mx-auto mt-5 max-w-xl text-xs leading-6 text-[#74675D] lg:mt-6 lg:text-sm lg:leading-7">
+      <p className="mx-auto mt-5 max-w-xl text-[11px] leading-5 text-[#74675D] sm:text-xs sm:leading-6 lg:mt-6 lg:text-sm lg:leading-7">
         Entdecken Sie unsere Behandlungen und wählen Sie
         die passende Dauer für Ihre persönliche Auszeit.
       </p>
@@ -596,22 +596,22 @@ export default function Home(): import("react").JSX.Element {
 
 
     {/* PRICE GRID */}
-    <div className="grid lg:grid-cols-2">
+    <div className="grid grid-cols-2">
 
 
       {/* ========================================= */}
       {/* 01 — KÖRPER */}
       {/* ========================================= */}
 
-      <div className="bg-[#2E2723] px-6 py-10 text-[#F6F0EA] md:px-10 lg:px-16 lg:py-14">
+      <div className="bg-[#2E2723] px-3 py-7 text-[#F6F0EA] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
-        <div className="mb-9 lg:mb-12">
+        <div className="mb-7 sm:mb-9 lg:mb-12">
 
-          <p className="text-[10px] uppercase tracking-[0.35em] text-[#D9B898] lg:text-xs">
+          <p className="text-[8px] uppercase tracking-[0.3em] text-[#D9B898] sm:text-[10px] lg:text-xs lg:tracking-[0.35em]">
             01
           </p>
 
-          <h3 className="mt-2 font-serif text-3xl font-light italic lg:mt-3 lg:text-4xl">
+          <h3 className="mt-2 font-serif text-xl font-light italic sm:text-2xl lg:mt-3 lg:text-4xl">
             Körper
           </h3>
 
@@ -619,81 +619,47 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Klassische Wellnessmassage */}
-        <div className="border-b border-white/20 pb-6 lg:pb-7">
+        <div className="border-b border-white/20 pb-5 sm:pb-6 lg:pb-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Klassische Wellnessmassage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Klassische Wellnessmassage
-            </h4>
+          <div className="mt-3 space-y-1.5 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:space-y-3 lg:text-sm">
 
-            {/* MOBILE */}
-            <div className="mt-4 space-y-2 text-xs lg:hidden">
+            <div className="flex items-center justify-between gap-2">
 
-              <div className="flex justify-between">
-                <span className="text-[#D9C9BA]">
-                  60 Min.
-                </span>
+              <span className="text-[#D9C9BA]">
+                60 Min.
+              </span>
 
-                <span>
-                  50 €
-                </span>
-              </div>
-
-              <div className="flex justify-between">
-                <span className="text-[#D9C9BA]">
-                  70 Min.
-                </span>
-
-                <span>
-                  60 €
-                </span>
-              </div>
-
-              <div className="flex justify-between">
-                <span className="text-[#D9C9BA]">
-                  90 Min.
-                </span>
-
-                <span>
-                  75 €
-                </span>
-              </div>
+              <span>
+                50 €
+              </span>
 
             </div>
 
-            {/* DESKTOP */}
-            <div className="hidden space-y-3 text-right text-sm lg:block">
+            <div className="flex items-center justify-between gap-2">
 
-              <div className="flex justify-between gap-6">
-                <span className="text-[#D9C9BA]">
-                  60 Min.
-                </span>
+              <span className="text-[#D9C9BA]">
+                70 Min.
+              </span>
 
-                <span>
-                  50 €
-                </span>
-              </div>
+              <span>
+                60 €
+              </span>
 
-              <div className="flex justify-between gap-6">
-                <span className="text-[#D9C9BA]">
-                  70 Min.
-                </span>
+            </div>
 
-                <span>
-                  60 €
-                </span>
-              </div>
+            <div className="flex items-center justify-between gap-2">
 
-              <div className="flex justify-between gap-6">
-                <span className="text-[#D9C9BA]">
-                  90 Min.
-                </span>
+              <span className="text-[#D9C9BA]">
+                90 Min.
+              </span>
 
-                <span>
-                  75 €
-                </span>
-              </div>
+              <span>
+                75 €
+              </span>
 
             </div>
 
@@ -703,39 +669,21 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Rückenmassage */}
-        <div className="border-b border-white/20 py-6 lg:py-7">
+        <div className="border-b border-white/20 py-5 sm:py-6 lg:py-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Rückenmassage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Rückenmassage
-            </h4>
+          <div className="mt-3 flex items-center justify-between gap-2 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:text-sm">
 
-            {/* MOBILE */}
-            <div className="mt-4 flex justify-between text-xs lg:hidden">
+            <span className="text-[#D9C9BA]">
+              30 Min.
+            </span>
 
-              <span className="text-[#D9C9BA]">
-                30 Min.
-              </span>
-
-              <span>
-                30 €
-              </span>
-
-            </div>
-
-            {/* DESKTOP */}
-            <div className="hidden text-right text-sm lg:block">
-
-              <span className="text-[#D9C9BA]">
-                30 Min.
-              </span>
-
-              <span className="ml-6">
-                30 €
-              </span>
-
-            </div>
+            <span>
+              30 €
+            </span>
 
           </div>
 
@@ -743,39 +691,21 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Fußzonenmassage */}
-        <div className="pt-6 lg:pt-7">
+        <div className="pt-5 sm:pt-6 lg:pt-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Fußzonenmassage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Fußzonenmassage
-            </h4>
+          <div className="mt-3 flex items-center justify-between gap-2 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:text-sm">
 
-            {/* MOBILE */}
-            <div className="mt-4 flex justify-between text-xs lg:hidden">
+            <span className="text-[#D9C9BA]">
+              30 Min.
+            </span>
 
-              <span className="text-[#D9C9BA]">
-                30 Min.
-              </span>
-
-              <span>
-                30 €
-              </span>
-
-            </div>
-
-            {/* DESKTOP */}
-            <div className="hidden text-right text-sm lg:block">
-
-              <span className="text-[#D9C9BA]">
-                30 Min.
-              </span>
-
-              <span className="ml-6">
-                30 €
-              </span>
-
-            </div>
+            <span>
+              30 €
+            </span>
 
           </div>
 
@@ -789,15 +719,15 @@ export default function Home(): import("react").JSX.Element {
       {/* 02 — GESICHT */}
       {/* ========================================= */}
 
-      <div className="border border-[#2E2723] bg-[#F6F0EA] px-6 py-10 text-[#4A3831] md:px-10 lg:px-16 lg:py-14">
+      <div className="border border-[#2E2723] bg-[#F6F0EA] px-3 py-7 text-[#4A3831] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
-        <div className="mb-9 lg:mb-12">
+        <div className="mb-7 sm:mb-9 lg:mb-12">
 
-          <p className="text-[10px] uppercase tracking-[0.35em] text-[#947963] lg:text-xs">
+          <p className="text-[8px] uppercase tracking-[0.3em] text-[#947963] sm:text-[10px] lg:text-xs lg:tracking-[0.35em]">
             02
           </p>
 
-          <h3 className="mt-2 font-serif text-3xl font-light italic text-[#655346] lg:mt-3 lg:text-4xl">
+          <h3 className="mt-2 font-serif text-xl font-light italic text-[#655346] sm:text-2xl lg:mt-3 lg:text-4xl">
             Gesicht
           </h3>
 
@@ -805,39 +735,21 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Gesichtsmassage */}
-        <div className="border-b border-[#D9CFC3] pb-6 lg:pb-7">
+        <div className="border-b border-[#D9CFC3] pb-5 sm:pb-6 lg:pb-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Gesichtsmassage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Gesichtsmassage
-            </h4>
+          <div className="mt-3 flex items-center justify-between gap-2 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:text-sm">
 
-            {/* MOBILE */}
-            <div className="mt-4 flex justify-between text-xs lg:hidden">
+            <span className="text-[#80654E]">
+              30 Min.
+            </span>
 
-              <span className="text-[#80654E]">
-                30 Min.
-              </span>
-
-              <span className="font-medium text-[#655346]">
-                30 €
-              </span>
-
-            </div>
-
-            {/* DESKTOP */}
-            <div className="hidden text-right text-sm lg:block">
-
-              <span className="text-[#80654E]">
-                30 Min.
-              </span>
-
-              <span className="ml-6 font-medium text-[#655346]">
-                30 €
-              </span>
-
-            </div>
+            <span className="font-medium text-[#655346]">
+              30 €
+            </span>
 
           </div>
 
@@ -851,15 +763,15 @@ export default function Home(): import("react").JSX.Element {
       {/* 03 — SPEZIALMASSAGEN */}
       {/* ========================================= */}
 
-      <div className="border border-[#2E2723] bg-[#F6F0EA] px-6 py-10 text-[#4A3831] md:px-10 lg:px-16 lg:py-14">
+      <div className="border border-[#2E2723] bg-[#F6F0EA] px-3 py-7 text-[#4A3831] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
-        <div className="mb-9 lg:mb-12">
+        <div className="mb-7 sm:mb-9 lg:mb-12">
 
-          <p className="text-[10px] uppercase tracking-[0.35em] text-[#947963] lg:text-xs">
+          <p className="text-[8px] uppercase tracking-[0.3em] text-[#947963] sm:text-[10px] lg:text-xs lg:tracking-[0.35em]">
             03
           </p>
 
-          <h3 className="mt-2 font-serif text-3xl font-light italic text-[#655346] lg:mt-3 lg:text-4xl">
+          <h3 className="mt-2 font-serif text-xl font-light italic text-[#655346] sm:text-2xl lg:mt-3 lg:text-4xl">
             Spezialmassagen
           </h3>
 
@@ -867,37 +779,21 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Sportmassage */}
-        <div className="border-b border-[#D9CFC3] pb-6 lg:pb-7">
+        <div className="border-b border-[#D9CFC3] pb-5 sm:pb-6 lg:pb-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Sportmassage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Sportmassage
-            </h4>
+          <div className="mt-3 flex items-center justify-between gap-2 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:text-sm">
 
-            <div className="mt-4 flex justify-between text-xs lg:hidden">
+            <span className="text-[#80654E]">
+              30 Min.
+            </span>
 
-              <span className="text-[#80654E]">
-                30 Min.
-              </span>
-
-              <span className="font-medium text-[#655346]">
-                30 €
-              </span>
-
-            </div>
-
-            <div className="hidden text-right text-sm lg:block">
-
-              <span className="text-[#80654E]">
-                30 Min.
-              </span>
-
-              <span className="ml-6 font-medium text-[#655346]">
-                30 €
-              </span>
-
-            </div>
+            <span className="font-medium text-[#655346]">
+              30 €
+            </span>
 
           </div>
 
@@ -905,37 +801,21 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Anticellulitemassage */}
-        <div className="border-b border-[#D9CFC3] py-6 lg:py-7">
+        <div className="border-b border-[#D9CFC3] py-5 sm:py-6 lg:py-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Anticellulitemassage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Anticellulitemassage
-            </h4>
+          <div className="mt-3 flex items-center justify-between gap-2 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:text-sm">
 
-            <div className="mt-4 flex justify-between text-xs lg:hidden">
+            <span className="text-[#80654E]">
+              30 Min.
+            </span>
 
-              <span className="text-[#80654E]">
-                30 Min.
-              </span>
-
-              <span className="font-medium text-[#655346]">
-                30 €
-              </span>
-
-            </div>
-
-            <div className="hidden text-right text-sm lg:block">
-
-              <span className="text-[#80654E]">
-                30 Min.
-              </span>
-
-              <span className="ml-6 font-medium text-[#655346]">
-                30 €
-              </span>
-
-            </div>
+            <span className="font-medium text-[#655346]">
+              30 €
+            </span>
 
           </div>
 
@@ -943,65 +823,35 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Kosmetische Lymphdrainage */}
-        <div className="pt-6 lg:pt-7">
+        <div className="pt-5 sm:pt-6 lg:pt-7">
 
-          <div className="lg:flex lg:items-start lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Kosmetische Lymphdrainage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Kosmetische Lymphdrainage
-            </h4>
+          <div className="mt-3 space-y-1.5 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:space-y-3 lg:text-sm">
 
-            {/* MOBILE */}
-            <div className="mt-4 space-y-2 text-xs lg:hidden">
+            <div className="flex items-center justify-between gap-2">
 
-              <div className="flex justify-between">
-                <span className="text-[#80654E]">
-                  60 Min.
-                </span>
+              <span className="text-[#80654E]">
+                60 Min.
+              </span>
 
-                <span className="font-medium text-[#655346]">
-                  50 €
-                </span>
-              </div>
-
-              <div className="flex justify-between">
-                <span className="text-[#80654E]">
-                  70 Min.
-                </span>
-
-                <span className="font-medium text-[#655346]">
-                  60 €
-                </span>
-              </div>
+              <span className="font-medium text-[#655346]">
+                50 €
+              </span>
 
             </div>
 
-            {/* DESKTOP */}
-            <div className="hidden space-y-3 text-right text-sm lg:block">
+            <div className="flex items-center justify-between gap-2">
 
-              <div className="flex justify-between gap-6">
+              <span className="text-[#80654E]">
+                70 Min.
+              </span>
 
-                <span className="text-[#80654E]">
-                  60 Min.
-                </span>
-
-                <span className="font-medium text-[#655346]">
-                  50 €
-                </span>
-
-              </div>
-
-              <div className="flex justify-between gap-6">
-
-                <span className="text-[#80654E]">
-                  70 Min.
-                </span>
-
-                <span className="font-medium text-[#655346]">
-                  60 €
-                </span>
-
-              </div>
+              <span className="font-medium text-[#655346]">
+                60 €
+              </span>
 
             </div>
 
@@ -1017,15 +867,15 @@ export default function Home(): import("react").JSX.Element {
       {/* 04 — MASSAGE MIT ETWAS */}
       {/* ========================================= */}
 
-      <div className="bg-[#2E2723] px-6 py-10 text-[#F6F0EA] md:px-10 lg:px-16 lg:py-14">
+      <div className="bg-[#2E2723] px-3 py-7 text-[#F6F0EA] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
-        <div className="mb-9 lg:mb-12">
+        <div className="mb-7 sm:mb-9 lg:mb-12">
 
-          <p className="text-[10px] uppercase tracking-[0.35em] text-[#D9B898] lg:text-xs">
+          <p className="text-[8px] uppercase tracking-[0.3em] text-[#D9B898] sm:text-[10px] lg:text-xs lg:tracking-[0.35em]">
             04
           </p>
 
-          <h3 className="mt-2 font-serif text-3xl font-light italic lg:mt-3 lg:text-4xl">
+          <h3 className="mt-2 font-serif text-xl font-light italic sm:text-2xl lg:mt-3 lg:text-4xl">
             Massage Mit Etwas
           </h3>
 
@@ -1033,15 +883,49 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Hot Stone */}
-        <div className="border-b border-white/20 pb-6 lg:pb-7">
+        <div className="border-b border-white/20 pb-5 sm:pb-6 lg:pb-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Hot-Stone-Massage
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Hot-Stone-Massage
-            </h4>
+          <div className="mt-3 flex items-center justify-between gap-2 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:text-sm">
 
-            <div className="mt-4 flex justify-between text-xs lg:hidden">
+            <span className="text-[#D9C9BA]">
+              60 Min.
+            </span>
+
+            <span>
+              50 €
+            </span>
+
+          </div>
+
+        </div>
+
+
+        {/* Schröpfmassage */}
+        <div className="pt-5 sm:pt-6 lg:pt-7">
+
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Schröpfmassage
+          </h4>
+
+          <div className="mt-3 space-y-1.5 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:space-y-3 lg:text-sm">
+
+            <div className="flex items-center justify-between gap-2">
+
+              <span className="text-[#D9C9BA]">
+                30 Min.
+              </span>
+
+              <span>
+                30 €
+              </span>
+
+            </div>
+
+            <div className="flex items-center justify-between gap-2">
 
               <span className="text-[#D9C9BA]">
                 60 Min.
@@ -1050,86 +934,6 @@ export default function Home(): import("react").JSX.Element {
               <span>
                 50 €
               </span>
-
-            </div>
-
-            <div className="hidden text-right text-sm lg:block">
-
-              <span className="text-[#D9C9BA]">
-                60 Min.
-              </span>
-
-              <span className="ml-6">
-                50 €
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        {/* Schröpfmassage */}
-        <div className="pt-6 lg:pt-7">
-
-          <div className="lg:flex lg:items-start lg:justify-between lg:gap-6">
-
-            <h4 className="text-lg font-light lg:text-xl">
-              Schröpfmassage
-            </h4>
-
-            {/* MOBILE */}
-            <div className="mt-4 space-y-2 text-xs lg:hidden">
-
-              <div className="flex justify-between">
-                <span className="text-[#D9C9BA]">
-                  30 Min.
-                </span>
-
-                <span>
-                  30 €
-                </span>
-              </div>
-
-              <div className="flex justify-between">
-                <span className="text-[#D9C9BA]">
-                  60 Min.
-                </span>
-
-                <span>
-                  50 €
-                </span>
-              </div>
-
-            </div>
-
-            {/* DESKTOP */}
-            <div className="hidden space-y-3 text-right text-sm lg:block">
-
-              <div className="flex justify-between gap-6">
-
-                <span className="text-[#D9C9BA]">
-                  30 Min.
-                </span>
-
-                <span>
-                  30 €
-                </span>
-
-              </div>
-
-              <div className="flex justify-between gap-6">
-
-                <span className="text-[#D9C9BA]">
-                  60 Min.
-                </span>
-
-                <span>
-                  50 €
-                </span>
-
-              </div>
 
             </div>
 
@@ -1145,15 +949,15 @@ export default function Home(): import("react").JSX.Element {
       {/* 05 — WELLNESS & PFLEGE */}
       {/* ========================================= */}
 
-      <div className="bg-[#2E2723] px-6 py-10 text-[#F6F0EA] md:px-10 lg:px-16 lg:py-14">
+      <div className="bg-[#2E2723] px-3 py-7 text-[#F6F0EA] sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
 
-        <div className="mb-9 lg:mb-12">
+        <div className="mb-7 sm:mb-9 lg:mb-12">
 
-          <p className="text-[10px] uppercase tracking-[0.35em] text-[#D9B898] lg:text-xs">
+          <p className="text-[8px] uppercase tracking-[0.3em] text-[#D9B898] sm:text-[10px] lg:text-xs lg:tracking-[0.35em]">
             05
           </p>
 
-          <h3 className="mt-2 font-serif text-3xl font-light italic lg:mt-3 lg:text-4xl">
+          <h3 className="mt-2 font-serif text-xl font-light italic sm:text-2xl lg:mt-3 lg:text-4xl">
             Wellness & Pflege
           </h3>
 
@@ -1161,46 +965,30 @@ export default function Home(): import("react").JSX.Element {
 
 
         {/* Ganzkörperpeeling */}
-        <div className="border-b border-white/20 pb-6 lg:pb-7">
+        <div className="border-b border-white/20 pb-5 sm:pb-6 lg:pb-7">
 
-          <div className="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <h4 className="text-[13px] font-light leading-snug sm:text-base lg:text-xl">
+            Ganzkörperpeeling
+          </h4>
 
-            <h4 className="text-lg font-light lg:text-xl">
-              Ganzkörperpeeling
-            </h4>
+          <div className="mt-3 flex items-center justify-between gap-2 text-[10px] sm:mt-4 sm:text-xs lg:mt-5 lg:text-sm">
 
-            <div className="mt-4 flex justify-between text-xs lg:hidden">
+            <span className="text-[#D9C9BA]">
+              60 Min.
+            </span>
 
-              <span className="text-[#D9C9BA]">
-                60 Min.
-              </span>
-
-              <span>
-                50 €
-              </span>
-
-            </div>
-
-            <div className="hidden text-right text-sm lg:block">
-
-              <span className="text-[#D9C9BA]">
-                60 Min.
-              </span>
-
-              <span className="ml-6">
-                50 €
-              </span>
-
-            </div>
+            <span>
+              50 €
+            </span>
 
           </div>
 
         </div>
 
 
-        <div className="mt-10 lg:mt-16">
+        <div className="mt-8 sm:mt-10 lg:mt-16">
 
-          <p className="max-w-sm text-xs leading-6 text-[#D9C9BA] lg:text-sm lg:leading-7">
+          <p className="max-w-sm text-[10px] leading-5 text-[#D9C9BA] sm:text-xs sm:leading-6 lg:text-sm lg:leading-7">
             Zeit für Entspannung, Pflege und
             persönliche Wohlfühlmomente.
           </p>
@@ -1215,7 +1003,7 @@ export default function Home(): import("react").JSX.Element {
       {/* WELLNESS BILD */}
       {/* ========================================= */}
 
-      <div className="relative min-h-[300px] overflow-hidden lg:min-h-[420px]">
+      <div className="relative min-h-[260px] overflow-hidden sm:min-h-[300px] lg:min-h-[420px]">
 
         <img
           src="/images/wellness.jpg"
