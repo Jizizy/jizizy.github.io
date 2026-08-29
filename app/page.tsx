@@ -306,6 +306,17 @@ export default function Home(): import("react").JSX.Element {
   />
 </div>
 
+<div className="mt-5 ml-5 text-left">
+
+  <h3 className="font-serif text-2xl font-light italic text-[#655346]">
+    Olessia Epp
+  </h3>
+
+  <p className="mt-1 ml-1 text-xs uppercase tracking-[0.25em] text-[#947963]">
+    Wellnessmasseurin
+  </p>
+
+</div>
       </div>
 
 
