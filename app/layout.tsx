@@ -16,9 +16,6 @@ export const metadata: Metadata = {
   title: "Olessia Wellness | Massage & Wellness",
   description:
     "Entspannung, Wellness und wohltuende Massagen bei Olessia Wellness in Arnsberg.",
-  icons: {
-    icon: "/favicon1.jpg",
-  },
 };
 
 export const viewport: Viewport = {
