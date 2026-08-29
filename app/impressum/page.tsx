@@ -73,9 +73,11 @@ export default function impressum() {
 
             <p className="mt-4 leading-8">
               Umsatzsteuer-Identifikationsnummer gemäß § 27 a
-              Umsatzsteuergesetz:
+              Umsatzsteuergesetz: wird beantragt
               <br />
-              Wird ergänzt.
+              IdNr: 10 084 726 953
+              <br />
+              
             </p>
           </section>
 
